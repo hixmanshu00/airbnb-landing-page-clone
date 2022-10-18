@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800+200&display=swap');
+
+body{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+
+@layer base{
+  .btn{
+    @apply text-white px-8 my-5 py-3 rounded-lg ;
+  }
+}
