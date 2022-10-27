@@ -5,7 +5,7 @@ import {ImFacebook,ImTwitter,ImInstagram} from 'react-icons/im'
 
 const Footer = () => {
   return (
-    <div>
+    <div className='bg-[#f7f7f7]'>
       <div className="p-6 border-t pt-8 lg:flex justify-evenly">
         <div className="text-sm border-b pb-4 md:border-none">
         <h4 className='font-semibold mb-1'>Support</h4>
