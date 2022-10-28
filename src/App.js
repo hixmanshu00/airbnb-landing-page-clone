@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Newsletter from './components/Newsletter';
 import People from './components/People';
 import Start from './components/Start';
+import Support from './components/Support';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <Features />
       <People />
+      <Support />
       <Start />
       <Newsletter />
       <Footer />
