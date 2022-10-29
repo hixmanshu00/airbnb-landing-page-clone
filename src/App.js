@@ -6,6 +6,7 @@ import Newsletter from './components/Newsletter';
 import People from './components/People';
 import Start from './components/Start';
 import Support from './components/Support';
+import Working from './components/Working';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Features />
       <People />
+      <Working />
       <Support />
       <Start />
       <Newsletter />
