@@ -6,7 +6,7 @@ import two from "../assets/cTwo.jpg";
 import three from "../assets/cThree.jpg";
 import four from "../assets/cFour.jpg";
 import five from "../assets/cFive.jpg";
-import  {IoIosArrowDropleft, IoIosArrowDropright} from "react-icons/io"
+import {MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight} from 'react-icons/md'
 
 const People = () => {
   const arrowStyles = {
@@ -34,15 +34,15 @@ const indicatorStyles = {
         showThumbs={false}
         renderArrowPrev={(onClickHandler, hasPrev, label) =>
                 hasPrev && (
-                    <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: 85 }}>
-                        <IoIosArrowDropleft size={30} className="bg-gray-50 rounded-full " />
+                    <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: -10 }} className="hidden md:block mr-4">
+                        <MdOutlineKeyboardArrowLeft size={26} className="bg-white hover:bg-gray-50 rounded-full shadow-md font-light " />
                     </button>
                 )
             }
         renderArrowNext={(onClickHandler, hasNext, label) =>
                 hasNext && (
-                    <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: 85 }}>
-                        <IoIosArrowDropright size={30} className=""/>
+                    <button type="button" onClick={onClickHandler} title={label} style={{ ...arrowStyles, right: -10 }} className="hidden md:block ml-4 lg:mr-4">
+                        <MdOutlineKeyboardArrowRight size={26} className="bg-white hover:bg-gray-50 rounded-full shadow-md font-light "/>
                     </button>
                 )
             }
@@ -73,44 +73,47 @@ const indicatorStyles = {
             }}
 
 
-        className="mx-auto my-12"
+        className=" my-12 md:px-20 px-4"
       >
         <div className="grid grid-flow-row md:grid-flow-col md:h-[470px] mx-auto  my-12 rounded-xl  bg-gray-100 max-w-[1270px] space-between justify-between ">
           <img
             src={one}
             alt="/"
-            className="max-w-[640px] h-full w-[600px] rounded-l-2xl object-center"
+            className="max-w-[640px] h-full w-[50%] rounded-l-2xl object-center"
           />
-          <div className="flex flex-col text-left">
-            <p className="text-2xl font-thin m-20 w-[470px]">
+          <div className="flex flex-col text-left m-8">
+            <p className=" sm:text-2xl font-thin sm:m-20   max-w-[470px]">
               "Hosting has been so rewarding and life-changing. It’s allowed us
               to pursue our passion for interior design and helped us realise
               our niche – that we really love renovating spaces for others to
               enjoy."
             </p>
-            <p className="mx-20 mt-[-70px] text-gray-800">
+            <p className="sm:mx-20 sm:mt-[-70px] mt-4 text-gray-800">
               Catherine, <br />
               interior designer and Host in Columbus, Ohio
             </p>
-            <p className="mx-20 underline my-4 text-sm ">Get Host tips</p>
+            <p className="sm:mx-20 underline my-4 text-sm ">Get Host tips</p>
           </div>
         </div>
 
-        <div className="flex rounded-xl my-12 bg-gray-100 max-w-[1270px] mx-auto md:h-[470px]  space-between justify-between ">
+        <div className="grid grid-flow-row md:grid-flow-col md:h-[470px] mx-auto  my-12 rounded-xl  bg-gray-100 max-w-[1270px] space-between justify-between">
           <img
             src={two}
             alt="/"
             className="max-w-[640px] w-full rounded-l-2xl h-full object-center"
           />
-          <div className="flex flex-col text-left">
-            <p className="text-2xl font-thin m-20 w-[470px]">
-            "Give yourself permission to play. I’ve poured so much love into [restoring this space] – and I think guests come back for that very reason."
+          <div className="flex flex-col text-left m-8">
+            <p className=" sm:text-2xl font-thin sm:m-20   max-w-[470px]">
+              "Hosting has been so rewarding and life-changing. It’s allowed us
+              to pursue our passion for interior design and helped us realise
+              our niche – that we really love renovating spaces for others to
+              enjoy."
             </p>
-            <p className="mx-20 mt-[-70px] text-gray-800">
-            Tiffany, <br />
-            former creative director and Host in Hollywood Beach, California
+            <p className="sm:mx-20 sm:mt-[-70px] mt-4 text-gray-800">
+              Catherine, <br />
+              interior designer and Host in Columbus, Ohio
             </p>
-            <p className="mx-20 underline my-4 text-sm ">Get Host tips</p>
+            <p className="sm:mx-20 underline my-4 text-sm ">Get Host tips</p>
           </div>
         </div>
 
@@ -120,15 +123,18 @@ const indicatorStyles = {
             alt="/"
             className="max-w-[640px] w-full rounded-l-2xl h-full object-center"
           />
-          <div className="flex flex-col text-left">
-            <p className="text-2xl font-thin m-20 w-[470px]">
-            "The part that I love most about hosting is the design and curating the spaces for the guests – cool details and making things they can interact with. You're helping them create memories."
+          <div className="flex flex-col text-left m-8">
+            <p className=" sm:text-2xl font-thin sm:m-20   max-w-[470px]">
+              "Hosting has been so rewarding and life-changing. It’s allowed us
+              to pursue our passion for interior design and helped us realise
+              our niche – that we really love renovating spaces for others to
+              enjoy."
             </p>
-            <p className="mx-20 mt-[-70px] text-gray-800">
-            Jordan, <br />
-            architect and Host in Denver, Colorado
+            <p className="sm:mx-20 sm:mt-[-70px] mt-4 text-gray-800">
+              Catherine, <br />
+              interior designer and Host in Columbus, Ohio
             </p>
-            <p className="mx-20 underline my-4 text-sm ">Visit her profile</p>
+            <p className="sm:mx-20 underline my-4 text-sm ">Get Host tips</p>
           </div>
         </div>
 
@@ -138,17 +144,18 @@ const indicatorStyles = {
             alt="/"
             className="max-w-[640px] w-full rounded-l-2xl h-full object-center"
           />
-          <div className="flex flex-col text-left">
-            <p className="text-2xl font-thin m-20 w-[470px]">
-              "Doing the interior designing for our Airbnb by using vintage
-              finds and contemporary touches was a really fun challenge. It was
-              a labour of love and something we are really proud of."
+          <div className="flex flex-col text-left m-8">
+            <p className=" sm:text-2xl font-thin sm:m-20   max-w-[470px]">
+              "Hosting has been so rewarding and life-changing. It’s allowed us
+              to pursue our passion for interior design and helped us realise
+              our niche – that we really love renovating spaces for others to
+              enjoy."
             </p>
-            <p className="mx-20 mt-[-70px] text-gray-800">
-            Wyatt and Brett,<br />
-            designers and makers in Chemainus, Canada
+            <p className="sm:mx-20 sm:mt-[-70px] mt-4 text-gray-800">
+              Catherine, <br />
+              interior designer and Host in Columbus, Ohio
             </p>
-            <p className="mx-20 underline my-4 text-sm ">Visit their profle</p>
+            <p className="sm:mx-20 underline my-4 text-sm ">Get Host tips</p>
           </div>
         </div>
 
@@ -158,17 +165,18 @@ const indicatorStyles = {
             alt="/"
             className="max-w-[640px] h-full w-full rounded-l-2xl object-center"
           />
-          <div className="flex flex-col text-left">
-            <p className="text-2xl font-thin m-20 w-[470px]">
-              "People really appreciate being in a different place. It's a
-              stage; I set it up for the visual experience. Everything has a
-              purpose to make the experience even more enjoyable."
+          <div className="flex flex-col text-left m-8">
+            <p className=" sm:text-2xl font-thin sm:m-20   max-w-[470px]">
+              "Hosting has been so rewarding and life-changing. It’s allowed us
+              to pursue our passion for interior design and helped us realise
+              our niche – that we really love renovating spaces for others to
+              enjoy."
             </p>
-            <p className="mx-20 mt-[-70px] text-gray-800">
-              Sarah, <br />
-              graphic designer and Host in Rhinebeck, New York
+            <p className="sm:mx-20 sm:mt-[-70px] mt-4 text-gray-800">
+              Catherine, <br />
+              interior designer and Host in Columbus, Ohio
             </p>
-            <p className="mx-20 underline my-4 text-sm ">Visit their profle</p>
+            <p className="sm:mx-20 underline my-4 text-sm ">Get Host tips</p>
           </div>
         </div>
       </Carousel>
