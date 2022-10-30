@@ -30,7 +30,7 @@ class Working extends React.Component{
     setWidth(x){
         let y = 100 - 0.048 * x;
         if(x<450){
-            y=100
+            y=90
         }
             this.setState({
                 slideWidth: y
