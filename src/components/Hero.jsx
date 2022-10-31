@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="m-5 w-auto hidden md:inline-block">
           <FaAirbnb size={40} className="" />
         </div>
-        <div className="m-8 lg:mx-[15%] mt-[300px] sm:mt-0">
+        <div className="m-8 lg:mx-[15%] mt-[300px] sm:mt-0 animate-fade-in-up ">
           <div className="max-w-[300px] sm:max-w-[490px]">
             <h3 className="uppercase font-bold text-sm md:text-xl">Become a host</h3>
             <h2 className="text-3xl md:text-6xl font-bold  my-4">

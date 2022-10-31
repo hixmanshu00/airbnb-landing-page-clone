@@ -2,7 +2,6 @@ import React from "react";
 import pricing from "../assets/pricing.jpg";
 import pricing2 from "../assets/pricing2.jpg";
 import {MdOutlineKeyboardArrowDown, } from 'react-icons/md'
-import {TbCurrencyRupee} from 'react-icons/tb'
 
 
 const Pricing = () => {

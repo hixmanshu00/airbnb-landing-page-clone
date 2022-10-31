@@ -51,7 +51,7 @@ class Working extends React.Component{
         };
         return(
             <div className='ml-12 lg:m-20'>
-            <h3 className='text-4xl font-bold my-12 lg:text-5xl lg:px-4'>How hosting works</h3>
+            <h3 className='text-4xl font-bold my-12 lg:text-5xl lg:px-4  '>How hosting works</h3>
             <Carousel
               showArrows={true}
               centerMode={true}
